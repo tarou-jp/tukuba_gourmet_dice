@@ -217,7 +217,7 @@ print <<EOF
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA0t45fvMjTCFbM9hixFDGwrJUrkMZNbs&language=ja"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=-------伏字-------&language=ja"></script>
 
 <script>
 var MyLatLng = new google.maps.LatLng(36.08636354495407, 140.1062760207793);
