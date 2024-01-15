@@ -1,0 +1,122 @@
+-- レストラン情報の挿入
+INSERT INTO restaurants (id, name, genre_id, latitude, longitude, min_price, max_price, image_path,image_count) VALUES
+(2, '芛堂寺', 1,36.09827062829514, 140.10615765472707, 850, 1160, 'idouji',2),
+(0, '清六屋　筑波大学店', 1,36.105957259848836, 140.1004027482318, 650, 1150, 'seiroku_daigakumae',2),
+(8,'Doctor Pho',4,36.09416774162145, 140.10757451164568,800,1300,'doctor_pho',1),
+(7,'松屋',3,36.095736253603235, 140.09784847957002,400,1100,'matuya',2),
+(6,'あじ彩',2,36.09840677257058, 140.10826625582288,550,990,'azisai',1),
+(5,'鶏々',1,36.09691053708278, 140.10994147277066,700,980,'toridori',2),
+(4,'むじゃき',1,36.09733333077225, 140.10928784082125,830,1100,'mujaki',3),
+(3,'夢屋',0,36.097590338319144, 140.09785968499827,600,1200,'yumeya',1),
+(1, '俺の生きる道 W', 1,36.10489679357548, 140.1038729826081, 850, 1150, 'oremiti_w',2);
+
+
+-- 清六屋　筑波大学店の営業時間（24時間営業）
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(0, 'Monday', '00:00', '23:59'),
+(0, 'Tuesday', '00:00', '23:59'),
+(0, 'Wednesday', '00:00', '23:59'),
+(0, 'Thursday', '00:00', '23:59'),
+(0, 'Friday', '00:00', '23:59'),
+(0, 'Saturday', '00:00', '23:59'),
+(0, 'Sunday', '00:00', '23:59');
+
+-- 俺の生きる道 Wの営業時間（水〜土 17:00〜00:00）
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(1, 'Wednesday', '17:00', '00:00'),
+(1, 'Thursday', '17:00', '00:00'),
+(1, 'Friday', '17:00', '00:00'),
+(1, 'Saturday', '17:00', '00:00');
+
+-- 芛堂寺の営業時間（毎日 11:30〜14:30、18:00〜21:30）
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(2, 'Monday', '11:30', '14:30'),
+(2, 'Monday', '18:00', '21:30'),
+(2, 'Tuesday', '11:30', '14:30'),
+(2, 'Tuesday', '18:00', '21:30'),
+(2, 'Wednesday', '11:30', '14:30'),
+(2, 'Wednesday', '18:00', '21:30'),
+(2, 'Thursday', '11:30', '14:30'),
+(2, 'Thursday', '18:00', '21:30'),
+(2, 'Friday', '11:30', '14:30'),
+(2, 'Friday', '18:00', '21:30'),
+(2, 'Saturday', '11:30', '14:30'),
+(2, 'Saturday', '18:00', '21:30'),
+(2, 'Sunday', '11:30', '14:30'),
+(2, 'Sunday', '18:00', '21:30');
+
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(3, 'Monday', '17:30', '00:00'),
+(3, 'Tuesday', '17:30', '00:00'),
+(3, 'Wednesday', '17:30', '00:00'),
+(3, 'Thursday', '17:30', '00:00'),
+(3, 'Friday', '17:30', '00:00'),
+(3, 'Saturday','17:30', '00:00'),
+(3, 'Sunday', '17:30', '00:00'),
+
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(4, 'Monday', '11:30', '14:30'),
+(4, 'Monday', '18:00', '22:00'),
+(4, 'Tuesday', '11:30', '14:30'),
+(4, 'Tuesday', '18:00', '22:00'),
+(4, 'Wednesday', '11:30', '14:30'),
+(4, 'Wednesday', '18:00', '22:00'),
+(4, 'Thursday', '11:30', '14:30'),
+(4, 'Thursday', '18:00', '22:00'),
+(4, 'Friday', '11:30', '14:30'),
+(4, 'Friday', '18:00', '22:00'),
+(4, 'Saturday', '11:30', '14:30'),
+(4, 'Saturday', '18:00', '22:00'),
+(4, 'Sunday', '11:30', '14:30'),
+(4, 'Sunday', '18:00', '22:00');
+
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(5, 'Monday', '11:30', '14:30'),
+(5, 'Monday', '18:00', '23:00'),
+(5, 'Wednesday', '11:30', '14:30'),
+(5, 'Wednesday', '18:00', '23:00'),
+(5, 'Thursday', '11:30', '14:30'),
+(5, 'Thursday', '18:00', '23:00'),
+(5, 'Friday', '11:30', '14:30'),
+(5, 'Friday', '18:00', '23:00'),
+(5, 'Saturday', '11:30', '14:30'),
+(5, 'Saturday', '18:00', '23:00'),
+(5, 'Sunday', '11:30', '14:30'),
+(5, 'Sunday', '18:00', '23:00');
+
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(6, 'Monday', '00:00', '01:00'),
+(6, 'Monday', '18:00', '23:59'),
+(6, 'Tuesday', '00:00', '01:00'),
+(6, 'Tuesday', '18:00', '23:59'),
+(6, 'Thursday', '00:00', '01:00'),
+(6, 'Thursday', '18:00', '23:59'),
+(6, 'Friday', '00:00', '01:00'),
+(6, 'Friday', '18:00', '23:59'),
+(6, 'Saturday', '00:00', '01:00'),
+(6, 'Saturday', '18:00', '23:59'),
+(6, 'Sunday', '00:00', '01:00'),
+(6, 'Sunday', '18:00', '23:59'),
+
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(7, 'Monday', '00:00', '23:59'),
+(7, 'Tuesday', '00:00', '23:59'),
+(7, 'Wednesday', '00:00', '23:59'),
+(7, 'Thursday', '00:00', '23:59'),
+(7, 'Friday', '00:00', '23:59'),
+(7, 'Saturday', '00:00', '23:59'),
+(7, 'Sunday', '00:00', '23:59');
+
+INSERT INTO business_hours (restaurant_id, day_of_week, open_time, close_time) VALUES
+(8, 'Monday', '11:00', '15:00'),
+(8, 'Monday', '16:00', '21:30'),
+(8, 'Tuesday', '11:00', '15:00'),
+(8, 'Tuesday', '16:00', '21:30'),
+(8, 'Wednesday', '11:00', '15:00'),
+(8, 'Wednesday', '16:00', '21:30'),
+(8, 'Thursday', '11:00', '15:00'),
+(8, 'Thursday', '16:00', '21:30'),
+(8, 'Friday', '11:00', '15:00'),
+(8, 'Friday', '16:00', '21:30'),
+(8, 'Saturday', '11:00', '22:00'),
+(8, 'Sunday', '11:00', '21:30');

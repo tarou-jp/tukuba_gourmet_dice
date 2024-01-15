@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.second-content {
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch; 
+}
+
+.map-section, .search-section {
+    display: flex;
+    height: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.map-section {
+    width: 78%;
+    height: 100%; 
+}
+
+.search-section {
+    width: 23%;
+    height: 100%; 
+}
+
+#map {
+    width: 100%;
+    height: 100vh; 
+}
+
+.search-form-wrapper{
+    width: 100%;
+    height: 100vh; 
+}
+
+.gourmet-search {
+    width: 100%;
+    height: 100%;
+}
+
+.search-form {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 100%;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,.1); */
+    overflow-y: auto;
+    padding: 30px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;
+}
+
+.form-item-title{
+    font-size: 1em;
+}
+
+.genre-section {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.genre-section label { 
+  padding: 5px 1px; 
+}
+
+.genre-section label input{
+  display: none; 
+}
+
+.genre-section label span {
+  color: #4b4b4bbf;
+  font-size: 14px; 
+  border: 1px solid #4b4b4bbf;
+  border-radius: 20px; 
+  padding: 5px 20px; 
+  height:100%;
+}
+
+label input:checked + span {
+    color: #FFF; 
+    background: #e59148; 
+    border: 1px solid #e59148; 
+}
+
+.form-item-title h3{
+    color: rgba(20,30,30,.7);
+}  
+
+select {
+    display: block;
+    width: 100%;
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.add-player{
+    border-top: dotted 4px #adadad;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+}
+
+.user-form , .my-user-form, .friend-user-form{
+    padding-top: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    border-radius: 30px;
+    overflow: hidden;
+    height: 8vh;
+    margin-bottom: 5px;
+}
+
+.user-form ,.friend-user-form{
+    border: 1px solid #4b4b4bbf;
+}
+
+.my-user-form{
+    border: 1px solid #e59148;
+}
+
+.user-form{
+    cursor: pointer;
+}
+
+.add-user-img{
+    margin-right: 20%;
+    height: 100%;
+    text-align: center;
+    align-items: center; 
+}
+
+.add-user-img img{
+    height: 7vh;
+    width: 7vh;
+    margin: auto 10%;
+}
+  
+.dice-button {
+    background-color: #E56D07;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px 
+}
+
+
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 25px;
+    width: 25%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    line-height: 24px;
+    color: #333; /* Adjust color as needed */
+}
+
+  

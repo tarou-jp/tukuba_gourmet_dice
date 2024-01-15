@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.third-content {
+    box-sizing: border-box;
+    /* border-bottom: dotted 4px #adadad; */
+    /* border-top: dotted 4px #adadad; */
+    display: flex;
+    align-items: stretch; 
+    /* background-color: #E56D07; */
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.search-result-section{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #E56D07; */
+    width: 62%;
+    margin: 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+.search-result-section h1{
+    background-color: #E56D07;
+    color: #fff;
+    padding: 0.5em 30px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-result-items{
+    padding:0;
+}
+
+
+
+.search-result-items ul{
+    padding: 0;
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 100px;
+}
+  
+.search-result-items ul li{
+    color: black;
+    /* border-left: solid 8px #E56D07; */
+    background: whitesmoke;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    border-radius: 0 15px 15px 0;
+    padding: 0.5em;
+    list-style-type: none!important;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center; 横方向の中心に配置 */
+    padding-left: 3vw;
+    width: 38%;
+}
+
+.search-form {
+    padding-right: 5vw;
+}
+
+.form-item-title{
+    font-size: 1em;
+}
+
+
+.genre-section {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+  
+
+.genre-section label { 
+    padding: 5px 1px; 
+}
+
+.genre-section label input{
+    display: none; 
+}
+
+.genre-section label span {
+    color: #4b4b4bbf;
+    font-size: 14px; 
+    border: 1px solid #4b4b4bbf;
+    border-radius: 20px; 
+    padding: 5px 20px; 
+    height:100%;
+}
+
+label input:checked + span {
+    color: #FFF; 
+    background: #e59148; 
+    border: 1px solid #e59148; 
+}
+
+.form-item-title h3{
+    color: rgba(20,30,30,.7);
+}  
+
+.search-form select {
+    display: block;
+    width: 100%;
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+
+.restaurant-box{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    flex-direction: row;
+    aspect-ratio: 16 / 6;
+}
+
+.restaurant-box .left-container{
+    display: flex; 
+    flex-direction: column;
+    width: 38%;
+}
+
+.restaurant-box .right-container{
+    width: 62%;
+    height: 100%;
+}
+
+.left-container .main-image {
+    width: 100%; 
+    aspect-ratio: 4 / 3;
+}
+
+.left-container .main-image img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.left-container .gourmet-image-group{
+    width: 100%; 
+    height: 27%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.gourmet-image-group img{
+    padding: 10px 10px 10px 0;
+    /* height: 100%; */
+}
+
+
+.right-container h1{
+    padding-left: 2vw;
+}
+
+
+.about-restaurant{
+    padding-left: 2vw;
+    margin: 0;
+}
+
+.score h4, .genre h4, .price h4 ,.visit_count h4{
+    padding: 0;
+    margin: 0;
+    margin: 1vh;
+    color: #333;
+}
+
+
+.star5_rating{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC; 
+    /* sfont-size: 30px; */
+}
+
+.star5_rating:before, .star5_rating:after{
+    content: '★★★★★';
+}
+
+.star5_rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32;
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; } /* 星5 */
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star5_rating[data-rate="4"]:after{ width: 80%; } /* 星4 */
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+.star5_rating[data-rate="3"]:after{ width: 60%; } /* 星3 */
+.star5_rating[data-rate="2.5"]:after{ width: 50%; } /* 星2.5 */
+.star5_rating[data-rate="2"]:after{ width: 40%; } /* 星2 */
+.star5_rating[data-rate="1.5"]:after{ width: 30%; } /* 星1.5 */
+.star5_rating[data-rate="1"]:after{ width: 20%; } /* 星1 */
+.star5_rating[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
+.star5_rating[data-rate="0"]:after{ width: 0%; } /* 星0 */
+
+.update-button{
+    margin-left: 1vh;
+}
+
+
+@media (max-width: 1500px) {
+    .business-day-hour {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1500px) {
+    .business-day-hour {
+        display: block;
+        padding: 2vh 0 0 2vw;
+        margin-left: 1vh;
+        bottom: 0;
+        height: auto;
+        position: relative;
+    }
+    
+    
+    
+    .time-table {
+        display: block;
+        border-collapse: collapse;
+        width: 100%; 
+        position: absolute;
+    }
+    
+    .time-table tbody th {
+        border-top: 1px solid #d2d2d2;
+    }
+    
+    .time-table tbody th, .time-table tbody td {
+        padding: 0px 10px;
+        text-align: center;
+        height:30px;
+        border-bottom: 1px solid #d2d2d2;
+    }
+    
+    .time-table tbody td {
+        color:#777777;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .time-table  tbody td .time {
+        color:#3c3c3c;
+    }
+}
+
+
+
+
+.price {
+    font-family: 'Arial', sans-serif;
+    display: inline-block; 
+    display: flex;
+    align-items: center;
+
+}
+
+.price-range{
+    bottom: 0;
+    margin-left: 1vw;
+
+}
+
+.min-price , .max-price{
+    font-size: 1rem;
+}
+
+.genre {
+    display: flex;
+    align-items: center;
+}
+
+.genre label span {
+    color: #4b4b4bbf; 
+    font-size: 14px; 
+    border: 1px solid #4b4b4bbf; 
+    border-radius: 20px; 
+    padding: 5px 20px;
+    margin-left: 1vw;
+}
+
+
+.number-of-visited{
+    align-items: center;
+    display: flex;
+}
+
+.number-of-visited p{
+    margin-left: 1vw;
+}
+
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 25px;
+    width: 25%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    line-height: 24px;
+    color: #333; /* Adjust color as needed */
+}
+
+  
