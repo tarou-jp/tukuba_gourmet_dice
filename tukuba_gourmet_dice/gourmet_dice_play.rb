@@ -31,7 +31,7 @@ if !session_id.nil? && !session_id.empty?
 end
 
 def calculate_travel_time(origin_lat, origin_lng, destination_lat, destination_lng, mode)
-  api_key = 'AIzaSyCA0t45fvMjTCFbM9hixFDGwrJUrkMZNbs'
+  api_key = '-------伏字-------'
   base_url = "https://maps.googleapis.com/maps/api/distancematrix/json"
   origin = "#{origin_lat},#{origin_lng}"
   destination = "#{destination_lat},#{destination_lng}"
